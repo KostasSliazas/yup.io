@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUP</title>
+</head>
+
+<body>
+    <script>
+        (async () => {
+            const rawResponse = await fetch('url here', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }, // this line is important, if this content-type is not set it wont work
+                body: 'id=33'
+            });
+            const content = await rawResponse.json();
+
+            console.log(content);
+        })();
+    </script>
+</body>
+
+</html>
