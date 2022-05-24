@@ -288,12 +288,7 @@
                 rel="noopener noreferrer">https://www.blue-yellow.lt/</a></div>
     </div>
     <script>
-        function toogleAnimation() {
-            window.getComputedStyle(this).getPropertyValue("animation-play-state") === 'running' ? this.style
-                .animationPlayState = 'paused' : this.style.animationPlayState = 'running'
-        }
-        const sircle = document.querySelector(".wrapcirc")
-        sircle.addEventListener("click", toogleAnimation)
+
                 (async () => {
             const rawResponse = await fetch('https://manoterasa.delfi.lt/vote.php', {
                 method: 'POST',
