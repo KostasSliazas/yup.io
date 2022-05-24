@@ -286,20 +286,6 @@
         <div class="circ34">THE</div>
         <div class="circ35">;)</div>
     </div>
-    <script>
-        (async () => {
-            const rawResponse = await fetch('https://manoterasa.delfi.lt/vote.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                }, // this line is important, if this content-type is not set it wont work
-                body: 'id=33'
-            });
-            const content = await rawResponse.json();
-
-            console.log(content);
-        })();
-    </script>
 </body>
 
 </html>
